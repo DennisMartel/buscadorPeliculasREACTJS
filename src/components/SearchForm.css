@@ -1,0 +1,43 @@
+.SearchForm__inputContainer {
+    position: relative;
+}
+
+.SearchForm__input {
+    border: none;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    color: rgb(127, 83, 166);
+    outline: none;
+    font-weight: 700;
+    font-size: 1rem;
+    animation: showForm 0.4s forwards;
+}
+
+.SearchForm__submit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.4rem;
+    border:none;
+    background-color: rgb(127, 83, 166);
+    height: 55px;
+    width: 100px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+@keyframes showForm {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

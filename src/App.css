@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+  padding: 10px;
+}
+
+
+.MoviesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 16px;
+}
+
+.MoviesList-item {
+  margin-bottom: 24px;
+  width: 50%;
+}

@@ -1,0 +1,7 @@
+.Home__results {
+    max-width: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
