@@ -1,5 +1,7 @@
 ## Buscador de peliculas en React JS
 
+Encuentra tu **pelicula favorita**, y descubre mas informacion acerca de ella 
+
 Tecnologias Usadas:
 
 * React JS
