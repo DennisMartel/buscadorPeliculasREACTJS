@@ -19,7 +19,7 @@ cd BuscadorPeliculasReact/
 npm i && npm start
 ```
 
-##Capturas de pantalla del proyecto##
+## Capturas de pantalla del proyecto ##
 
 ![profile-pelicula](movie-api.png)
 
