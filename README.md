@@ -4,7 +4,8 @@ Tecnologias Usadas:
 
 * React JS
 * CSS3 
-* HTML
+* HTML 5
+* Omdb API
 
 ¿Quieres probarla?
 
