@@ -22,3 +22,6 @@ npm i && npm start
 Captura de pantalla de proyecto
 
 ![profile-pelicula](movie-api.png)
+
+## El proyecto esta creado con ##
+create-react-app
