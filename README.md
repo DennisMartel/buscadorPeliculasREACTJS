@@ -26,4 +26,4 @@ npm i && npm start
 ![no-encontrado](not-found.png)
 
 ## El proyecto esta creado con ##
-<a href=''>Create-React-App</a>
+<a href='https://github.com/facebook/create-react-app' target='__blank'>Create-React-App</a>
