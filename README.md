@@ -21,7 +21,9 @@ npm i && npm start
 
 ## Capturas de pantalla del proyecto ##
 
-![profile-pelicula](movie-api.png)
+![pantalla-principal](main-screen.png)
+![informacion-pelicula](info-movie.png)
+![no-encontrado](not-found.png)
 
 ## El proyecto esta creado con ##
-create-react-app
+<a href=''>Create-React-App</a>
