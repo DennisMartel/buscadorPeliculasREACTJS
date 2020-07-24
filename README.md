@@ -20,11 +20,11 @@ npm i && npm start
 ```
 
 ## El proyecto esta creado con ##
-<a href='https://github.com/facebook/create-react-app' target='__blank'>Create-React-App</a>
+<a href='https://github.com/facebook/create-react-app' target='_blank'>Create-React-App</a>
 
 ## contribuidores
-* **Dennis Alexander**
-* **Nelson Adonis Hernandez**
+* **<a href='https://github.com/DennisMartel' target='_blank'>Dennis Alexander Martel</a>**
+* **<a href='https://github.com/nelson-developer' target='_blank'>Nelson Adonis Hernandez</a>**
 
 ## Capturas de pantalla del proyecto ##
 
