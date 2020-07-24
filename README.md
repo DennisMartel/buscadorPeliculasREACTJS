@@ -19,11 +19,17 @@ cd BuscadorPeliculasReact/
 npm i && npm start
 ```
 
+## El proyecto esta creado con ##
+<a href='https://github.com/facebook/create-react-app' target='__blank'>Create-React-App</a>
+
+## contribuidores
+* **Dennis Alexander**
+* **Nelson Adonis Hernandez**
+
 ## Capturas de pantalla del proyecto ##
 
 ![pantalla-principal](main-screen.png)
 ![informacion-pelicula](info-movie.png)
 ![no-encontrado](not-found.png)
 
-## El proyecto esta creado con ##
-<a href='https://github.com/facebook/create-react-app' target='__blank'>Create-React-App</a>
+
