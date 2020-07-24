@@ -5,3 +5,139 @@
     align-items: flex-start;
     flex-wrap: wrap;
 }
+
+.Home {
+    width: 100%;
+    max-width: 1280px;
+    text-align: center;
+  }
+  
+  .Home__container {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .Home__form {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 15px;
+  }
+  
+  .Home__description {
+    margin-top: 20px;
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Home__results {
+    max-width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  
+  .Home__movie {
+    position: relative;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  
+  .Home__movieImg {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    height: 400px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
+  }
+  
+  .Home__movieImg_blured {
+    position: absolute;
+    z-index: 1;
+    opacity: .8;
+    filter: blur(15px);
+    transform: scale(0.9) translateY(20px);
+  }
+  
+  .Home__movieContent {
+    position: absolute;
+    z-index: 3;
+    left: 15px;
+    right: 15px;
+    bottom: 20px;
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.8);
+    /* background-color: black; */
+    border-radius: 15px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.4s ease
+  }
+  
+  .Home__movie:hover .Home__movieContent {
+    opacity: 1;
+  }
+  
+  .Home__movieContent-title  {
+    font-weight: 700;
+  }
+  
+  .Home__movieContent-year {
+    font-size: 0.8rem;
+  }
+  
+  .Home__credits {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    opacity: 0.3;
+    transition: opacity 0.4s ease;
+  }
+  
+  .Home__credits:hover {
+    opacity: 1
+  }
+  
+  @media screen and (max-width: 768px) {
+    .Home__movie {
+      width: calc(100% / 3);
+    }
+  
+  }
+  
+  @media screen and (max-width: 500px) {
+    .Home__movie {
+      width: 50%;
+      padding: 7px;
+    }
+  
+    .Home__movieImg {
+      border-radius: 10px;
+    }
+  
+    .Home__container {
+      overflow-x: hidden;
+    }
+  
+    .Home__movieImg_blured {
+      transform: scale(0.9) translateY(15px);
+    }
+  
+  }
+  
+  @media screen and (max-width: 320px) {
+    .Home__movie {
+      width: 95%;
+    }
+  }

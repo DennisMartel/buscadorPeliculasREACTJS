@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
+
+import '../pages/Home.css'
 
 export class Movie extends Component {
     static propTypes = {
@@ -11,25 +14,14 @@ export class Movie extends Component {
     render() {
         const { id, poster, title, year} = this.props
         return (
-            <div className="container">
-                <div className="row">
-                    <div className="col-6">
-                        <a href={`?id=${id}`}>
-                        <div className="card">
-                        <img 
-                            alt={title}
-                            src={poster} 
-                            className="card-img-top" 
-                        />
-                        <div class="card-body">
-                            <h5 className="card-title">{year}</h5>
-                            <p className="card-text">{title}</p>
-                        </div>
-                        </div>
-                        </a>
-                    </div>
+            <Link to={`/detail/${id}`} className="Home__movie">
+                <img src={poster} alt={title} className="Home__movieImg" />
+                <img src={poster} alt={title} className="Home__movieImg Home__movieImg_blured" />
+                <div className="Home__movieContent">
+                <h3 className="Home__movieContent-title">{title}</h3>
+                <p className="Home__movieContent-year">{year}</p>
                 </div>
-            </div>
+            </Link>
         )
     }
 }

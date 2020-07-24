@@ -1,17 +1,13 @@
 .App {
-  text-align: center;
-  padding: 10px;
-}
-
-
-.MoviesList {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  padding: 16px;
+  align-items: center;
 }
 
-.MoviesList-item {
-  margin-bottom: 24px;
-  width: 50%;
+.notfound {
+  width: 315px;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

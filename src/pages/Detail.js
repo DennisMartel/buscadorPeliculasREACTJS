@@ -1,12 +1,18 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { Link} from 'react-router-dom'
 import './Detail.css'
 
 const API_KEY = 'f5bc629a'
 
 export class Detail extends Component {
     static propTypes = {
-        id: PropTypes.string
+        match: PropTypes.shape({
+            params: PropTypes.object,
+            isExact: PropTypes.bool,
+            path: PropTypes.string,
+            url: PropTypes.string
+        })
     }
 
     state = { movie: {} }
@@ -20,13 +26,10 @@ export class Detail extends Component {
             })
     }
 
-    _goBack() {
-        window.history.back()
-    }
-
     componentDidMount() {
-        const { id } = this.props
-        this._fetchMovie({ id })
+        console.log(this.props)
+        const { movieId } = this.props.match.params
+        this._fetchMovie({ id: movieId })
     }
 
     render() {
@@ -80,7 +83,12 @@ export class Detail extends Component {
                 {Genre}
                 </p>
                 <div className="Detail__footer">
-                    <button className="Detail__btn" onClick={this._goBack}>Regresar</button>
+                    <Link 
+                        className="Detail__btn" 
+                        to='/' 
+                    >
+                        volver a la portada
+                    </Link>
                 </div>
             </div>
             </div>

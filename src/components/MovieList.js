@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Movie } from './Movie'
+
 import '../pages/Home.css'
 
 export class MovieList extends Component {
